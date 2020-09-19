@@ -1,0 +1,30 @@
+exer06
+// Ramzi Maresh Ahmed 1626871
+
+
+#include<iostream>
+#include <cmath>
+using namespace std;
+double const  pi = 3.142; // pi value 
+float CalcVol(float, float);  // The function declaration 
+int main ()
+{
+	float num_high, num_radious, V;
+    cout <<" Enter the highest : "	<< endl;
+    cin >> num_high;
+    cout <<" Enter the radious : "	<< endl;
+    cin >> num_radious;    
+    V = CalcVol(num_high, num_radious);   //function call 
+      
+    cout <<"the volume of a cone is " << V;
+    return 0;
+}
+
+float CalcVol(float a, float b) // function header 
+{
+	float c;
+	c = (pi * a * a) * b/ 3; // now will calculate to get the value of V
+	return c;
+	// function body
+	
+}
